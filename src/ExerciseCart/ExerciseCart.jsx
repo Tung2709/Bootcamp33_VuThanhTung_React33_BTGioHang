@@ -55,10 +55,23 @@ export default class ExerciseCart extends Component {
       hinhAnh: "./img/vsphone.jpg",
       soLuong:1,
     }],
+    chiTietSP2:[ {
+      maSP: 1,
+      tenSP: "VinSmart Live",
+      manHinh: "AMOLED, 6.2, Full HD+",
+      heDieuHanh: "Android 9.0 (Pie)",
+      cameraTruoc: "20 MP",
+      cameraSau: "Chính 48 MP & Phụ 8 MP, 5 MP",
+      ram: "4 GB",
+      rom: "64 GB",
+      giaBan: 5700000,
+      hinhAnh: "./img/vsphone.jpg",
+      soLuong:1,
+    }],
   };
   xemChiTiet = (click) => {
     this.setState({
-      chiTietSP:[click],
+      chiTietSP2:[click],
     })
   };
   addToCart=(sanphamchon)=>{
@@ -126,7 +139,7 @@ export default class ExerciseCart extends Component {
       rom,
       giaBan,
       hinhAnh,
-    } = this.state.chiTietSP[0];
+    } = this.state.chiTietSP2[0];
     
     return (
       <div className="container">
